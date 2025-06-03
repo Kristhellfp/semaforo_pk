@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.semaforo {
+  width: 80px;
+  background: #333;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.luz {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #555;
+  box-shadow: inset 0 0 10px #000;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.roja {
+  background: #550000;
+}
+
+.amarilla {
+  background: #555500;
+}
+
+.verde {
+  background: #005500;
+}
+
+.encendida.roja {
+  background: red;
+  box-shadow: 0 0 15px red;
+}
+
+.encendida.amarilla {
+  background: yellow;
+  box-shadow: 0 0 15px yellow;
+}
+
+.encendida.verde {
+  background: limegreen;
+  box-shadow: 0 0 15px limegreen;
+}
